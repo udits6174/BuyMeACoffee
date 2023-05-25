@@ -1,5 +1,5 @@
 # BuyMeACoffee
-cd to client directory 
-`cd client<br>npm install<br>  
-npm start`
-
+cd to client directory and install necessary dependencies  
+`$ cd client`  
+`$ npm install`     
+`$ npm start`
