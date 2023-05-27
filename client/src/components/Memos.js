@@ -38,7 +38,7 @@ const Memos = ({state}) => {
                 </td>
                 <td className={classes}>
                   <Typography variant="small" color="blue-gray" className="font-normal">
-                 {new Date(memo.timestamp * 1000).toLocaleString()}
+                 {new Date(Number(memo.timestamp)*1000).toLocaleString()}
                   </Typography>
                 </td>
                 </tr>
