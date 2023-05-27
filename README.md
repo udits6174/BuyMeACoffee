@@ -9,6 +9,6 @@ Root
 |  
 ------client  
 | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|  
-|       -------package.json with front end dependencies  
+|&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-------package.json with front end dependencies  
 |  
 package.json with the back end dependencies
