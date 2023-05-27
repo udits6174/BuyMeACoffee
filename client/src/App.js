@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
 import abi from './contract/Bmc.json';
-import { Contract } from 'hardhat/internal/hardhat-network/stack-traces/model';
 import Buy from './components/Buy.js';
 import Memos from './components/Memos';
 import { Card, Typography, Button } from '@material-tailwind/react';
@@ -29,8 +28,8 @@ function App() {
             ethereum.on('accountsChanged', () => {
               window.location.reload();
             })
-            const provider = new ethers.providers.Web3Provider(ethereum);
-            const signer = provider.getSigner();
+            const provider = new ethers.BrowserProvider(ethereum);
+            const signer = await provider.getSigner();
             const contract = new ethers.Contract(contractAddress, contractABI, signer);
             setAccount(account);
             setState({ provider, signer, contract });

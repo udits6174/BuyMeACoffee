@@ -9,7 +9,7 @@ const Buy = ({ state }) => {
         const name = document.querySelector('#name').value;
         const msg = document.querySelector('#msg').value;
         const val = document.querySelector('#amount').value;
-        const amount = { value: ethers.utils.parseEther(val) };
+        const amount = { value: ethers.parseEther(val) };
         await contract.buycoffee(name, msg, amount);
     }
     return (
